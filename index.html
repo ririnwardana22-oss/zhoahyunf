@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Interaktif Ririn Wardana 💖</title>
+
+  <!-- Font & Icon -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      color: #333;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      color: white;
+      background: linear-gradient(120deg, #ff91a4, #ffb6c1);
+      position: relative;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin: 0;
+      animation: typing 4s steps(22), blink .75s step-end infinite;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid white;
+      display: inline-block;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 25px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+      position: relative;
+      z-index: 2;
+    }
+
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 25px;
+      border: 5px solid #ff91a4;
+      object-fit: cover;
+      box-shadow: 0 0 20px rgba(255, 100, 150, 0.4);
+      transition: transform 0.4s ease;
+    }
+
+    .profile-img:hover {
+      transform: rotate(6deg) scale(1.05);
+    }
+
+    h2 {
+      color: #ff5c8d;
+      border-left: 5px solid #ff91a4;
+      padding-left: 10px;
+    }
+
+    p {
+      line-height: 1.7;
+      font-size: 1.05em;
+    }
+
+    .biodata-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .biodata-table td {
+      padding: 10px 15px;
+      vertical-align: top;
+    }
+
+    .biodata-table tr:hover {
+      background-color: #fff0f5;
+      transition: 0.3s;
+    }
+
+    .biodata-table td:first-child {
+      font-weight: 600;
+      width: 35%;
+      color: #ff5c8d;
+    }
+
+    .social-links {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #ff91a4;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+      background-color: #ff5c8d;
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(255,92,141,0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ffb6c1;
+      color: white;
+      margin-top: 60px;
+      font-weight: 500;
+    }
+
+    /* Floating animation for decoration */
+    .floating {
+      position: absolute;
+      top: -30px;
+      right: 30px;
+      width: 120px;
+      height: 120px;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Hai, Aku Ririn Wardana 💗</h1>
+    <p>Selamat datang di website pribadiku!</p>
+    <lottie-player class="floating" src="https://assets9.lottiefiles.com/packages/lf20_touohxv0.json" background="transparent" speed="1" loop autoplay></lottie-player>
+  </header>
+
+  <div class="container">
+    <img src="WhatsApp Image 2025-10-22 at 11.05.22.jpeg" alt="Foto Ririn" class="profile-img">
+
+    <h2>💖 Tentang Saya</h2>
+    <p>Halo! Aku <strong>Ririn Wardana</strong>, seorang pelajar yang suka membaca, menulis cerita fiksi, dan belajar desain web!  
+      Aku percaya setiap hal kecil yang kita buat bisa membawa kebahagiaan dan inspirasi bagi orang lain ✨</p>
+
+    <h2>📋 Biodata Diri</h2>
+    <table class="biodata-table">
+      <tr><td>Nama Lengkap</td><td>Ririn Wardana</td></tr>
+      <tr><td>Tempat, Tanggal Lahir</td><td>Samarinda, 22 Agustus 2008</td></tr>
+      <tr><td>Alamat</td><td>Jl. Sendawar No.2, Samarinda</td></tr>
+      <tr><td>Hobi</td><td>Membaca, Menulis, dan Desain</td></tr>
+      <tr><td>Cita-cita</td><td>Menjadi Penulis & Desainer Web</td></tr>
+    </table>
+
+    <h2>📱 Hubungi Aku</h2>
+    <div class="social-links">
+      <a href="mailto:ririnwardana22@gmail.com">✉️ Kirim Email</a>
+      <a href="https://instagram.com/riinchio" target="_blank">📸 Instagram</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Ririn Wardana | Dibuat dengan 💗 di GitHub Pages
+  </footer>
+</body>
+</html>
